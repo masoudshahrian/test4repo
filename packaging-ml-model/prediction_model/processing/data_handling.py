@@ -20,7 +20,6 @@ def load_dataset(file_name):
  def load_pipeline(pipeline_to_load)
      save_path= os.path.join(config.SAVE_MODEL_PATH,config.MODEL_NAME)
      model_loaded= joblib.load(save_path)
-
      print(f" model has been loaded")
      return model_loaded
 
